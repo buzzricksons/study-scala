@@ -19,27 +19,6 @@ object MyModule {
     msg.format(name, n, f(n))
   }
 
-  def findFirst(ss: Array[String], key: String): Int = {
-    @tailrec
-    def loop(n: Int): Int =
-      if (n >= ss.length) -1
-      else if (ss(n) == key) n
-      else loop(n + 1)
-
-    loop(0)
-  }
-
-  def findFirst[A](as: Array[A], p: A => Boolean): Int = {
-    @tailrec
-    def loop(n: Int): Int =
-      if (n >= as.length) -1
-      else if (p(as(n))) n
-      else loop(n + 1)
-
-    loop(0)
-  }
-
-
   private def formatAbs(x: Int) = {
     val msg = "The absolute value of %d is %d"
     msg.format(x, abs(x))

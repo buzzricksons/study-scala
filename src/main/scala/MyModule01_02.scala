@@ -1,6 +1,6 @@
 import scala.annotation.tailrec
 
-object MyModule2 {
+object MyModule01_02 {
   def findFirst(ss: Array[String], key: String): Int = {
     @tailrec
     def loop(n: Int): Int =

@@ -1,6 +1,6 @@
 import scala.annotation.tailrec
 
-object MyModule {
+object MyModule01_01 {
   def abs(n: Int): Int =
     if (n < 0) -n
     else n

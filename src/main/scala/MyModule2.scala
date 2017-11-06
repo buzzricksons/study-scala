@@ -22,6 +22,7 @@ object MyModule2 {
   }
 
   def main(args: Array[String]): Unit = {
-    print(findFirst(Array(7, 9, 13), (x: Int) => x == 9))
+    println(findFirst(Array(7, 9, 13), (x: Int) => x == 9))
+    println(findFirst(Array("a", "b", "c"), (x: String) => x == "c"))
   }
 }

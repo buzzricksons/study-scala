@@ -25,6 +25,11 @@ object List {
       case Cons(h, t) => Cons(h, append(t, a2))
     }
 
+  def dropWhile[A](as: List[A])(f: A => Boolean): List[A] = as match {
+      case Cons(h, t) if f(h) => dropWhile(t)(f)
+      case _ => as
+    }
+
 
   def main(args: Array[String]): Unit = {
     val ex1: List[Double] = Nil

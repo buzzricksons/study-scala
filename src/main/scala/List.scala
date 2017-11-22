@@ -38,6 +38,13 @@ object List {
   def sum2(ns: List[Int]) =
     foldRight(ns, 0)((x, y) => x + y)
 
+  /**
+    * _ + _ >>>>>>>>>> (x, y) => x + y
+    * _ * 2 >>>>>>>>>> x => x * 2
+    * _.head >>>>>>>>>> xs => xs.head
+    * _ drop _ >>>>>>>>>> (xs, n) => xs.drop(n)
+    *
+    */
   def product2(ns: List[Double]) =
     foldRight(ns, 1.0)(_ * _)//_ * _ is simple version of (x, y) => x * y
 

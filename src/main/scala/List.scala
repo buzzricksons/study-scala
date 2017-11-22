@@ -39,7 +39,7 @@ object List {
     foldRight(ns, 0)((x, y) => x + y)
 
   def product2(ns: List[Double]) =
-    foldRight(ns, 1.0)(_ * _)
+    foldRight(ns, 1.0)(_ * _)//_ * _ is simple version of (x, y) => x * y
 
 
   def main(args: Array[String]): Unit = {

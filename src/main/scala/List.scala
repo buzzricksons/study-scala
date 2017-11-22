@@ -40,6 +40,10 @@ object List {
     println(List(1,2,3) match { case Cons(h, _) => h })
     println(List(1,2,3) match { case Cons(_, t) => t })
 //    println(List(1,2,3) match { case Nil => 42 }) //Match Error
+
+    val xs: List[Int] = List(1,2,3,4,5)
+    val ex1_1 = dropWhile(xs)(x => x < 4)
+    println(ex1_1)
   }
 
 }

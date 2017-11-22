@@ -1,4 +1,4 @@
-object MyModule01_03 {
+object MyModule01_04 {
 
   def main(args: Array[String]): Unit = {
     val x = (1 to 6).toArray
